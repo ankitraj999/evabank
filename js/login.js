@@ -11,8 +11,8 @@ function getdetail(form){
         //alert(datavalue[0]);
         // debugger;
         if(datavalue[0]==password){
-            alert("you are in getdetail");
-            alert(datavalue[0]);
+            //alert("you are in getdetail");
+            //alert(datavalue[0]);
             
           window.open("../page/finalPg.html","_blank");
             localStorage.setItem("name",username);
