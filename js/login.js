@@ -104,7 +104,7 @@ function subVal(){
     if(sub==""){
         alert("enter value");}
         else{
-    if(sub<existBal){
+    if(paseInt(sub)<parseInt(existBal)){
         var totalBalance=parseInt(existBal)-parseInt(sub);
         
         var password=datavalue[0];
