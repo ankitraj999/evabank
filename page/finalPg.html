@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="2">
+    
+    <title>Final Page</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/login.js"></script>
+
+</head>
+<body onload="getData()">
+    <div class="jumbotron">
+       Customer Id : <p id="cusId"></p> 
+       First Name : <p id="fNam"></p> 
+       Last Name : <p id="lNam"></p>  
+        Address : <p id="add"></p> 
+       Age : <p id="age"></p> 
+       Account Type : <p id="acType"></p> 
+       Account Number : <p id="acNum"></p> 
+       Opening Balance : <p id="opBal"></p> 
+       <button class="btn btn-success btn-block" id="addBtn" onclick="addVal()">Add Amount</button>
+       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       
+       <button class="btn btn-info btn-block" id="subBtn" onclick="subVal()">Withdraw</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customer</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="../js/storedata.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron   text-center">
+            <h1 class=display-5>Registeration Form </h1>
+            <hr>
+            Enter your details
+        </div>
+
+        <div class="row " id="customerPg">
+            <form class="offset-lg-3 col-lg-6" name="myform">
+                <div class="form-group">
+                    <label for="customeId">Cutomer ID:</label>
+                    <input type="number" autofocus class="form-control " id="textId" name="textId" placeholder="Cutomer ID"
+                        min=101 max=110 required>
+                </div>
+                <div class="form-group">
+                    <label for="customName">First Name:</label>
+                    <input type="text" class="form-control" id="textName" name="textName" placeholder="First Name"
+                        required>
+                </div>
+                <div class="form-group">
+                        <label for="customName">Last Name:</label>
+                        <input type="text" class="form-control" id="textName2" name="textName2" placeholder="Last Name"
+                            required>
+                    </div>
+
+                <label for="address">Address:</label>
+                <select required id='address' name='address' class='form-control'>
+                    <option value="unknown">Select Address</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="pune">Pune</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="mumbai">Mumbai</option>
+                </select>
+                <div class="form-group">
+                    <label for="ageId">Age:</label>
+                    <input type="number" class="form-control" id="ageId" name="ageId" placeholder="Age" min="22"
+                        max="100" required>
+                </div>
+                <div class="form-group">
+                    <lable for="radio">Select Account Type:</lable>
+                    <input type="radio"  id="radio" name="radio" value="Saving Account" > Saving Account
+                    
+                    <input type="radio"  id="radio1" name="radio" value="Current Account" >Current Account
+
+
+                </div>
+
+                <div class="form-group">
+                    <label for="usernameId">Username :</label>
+                    <input type="text" class="form-control" id="usernameId" name="userId" maxlength="10"
+                        placeholder="username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="passwordId">Password :</label>
+                    <input type="password" class="form-control" id="passwordId" name="passwordId" placeholder="password"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="passwordId">Account No. :</label>
+                    <input type="number" min="10001" max="10010" class="form-control" id="acnId" name="acnId"
+                        placeholder="Account No." required>
+                </div>
+                <div class="form-group">
+                    <label for="balanceId">Opening Balance :</label>
+                    <input type="number" class="form-control" id="balanceId" name="balanceId"
+                        placeholder="Opening balance" min="5000" required>
+                </div>
+
+
+
+                <hr>
+                <div class="btn-group">
+                    <button type="reset" class="btn btn-success" id="clearBtn" >Clear</button>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <button type="submit" class="btn btn-info" id="loginBtn" onclick="savedata(this.form)">Sumbit</button>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="btn btn-danger" id="homeBtn" onclick="home()">Home</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <marquee bgcolor="yellow">
+        <h5 class="display-5 text-danger">Eva bank pvt. ltd. in your service</h5>
+    </marquee>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="../js/login.js"></script>
+</head>
+<body>
+    <div class="jumbotron" id="loginDiv">
+            <marquee>
+                    <h4>
+                        EVA BANK PVT. LTD.</h4>
+             </marquee>
+
+       </marquee>
+        <div class="row ">
+            <form class="offset-lg-4 col-lg-4" method="POST"> 
+            <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="textId" required placeholder="Enter username">
+                    
+                  </div>
+                  <div class="form-group">
+                    <label for="passwordId">Password</label>
+                    <input type="password" class="form-control" id="passwordId" required placeholder="Password">
+                    <small id="passwordHelp" class="form-text text-muted">Never share your password with anyone.</small>
+                  </div>
+
+                  <a href="register.html" class="text-primary ">Register Here</a><br>
+        <button type="submit" class="btn btn-success" onclick="getdetail(this.form)">Submit</button> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="reset" class="btn btn-primary" >Clear</button>
+    </form>
+    </div>
+    </div>
+</body>
+</html>
