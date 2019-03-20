@@ -99,8 +99,8 @@ function subVal(){
     var data=localStorage.getItem(name);
     var datavalue=data.split(",");
     var existBal=datavalue[8];
-    alert(sub);
-    alert(existBal);
+   // alert(sub);
+   // alert(existBal);
     if(sub==""){
         alert("enter value");}
         else{
